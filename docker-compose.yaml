@@ -18,6 +18,8 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: flask
+    ports:
+      - "5000:5000"
     networks:
       - container-network
     restart: always
