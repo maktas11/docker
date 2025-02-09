@@ -16,5 +16,5 @@ COPY . .
 # Set the entrypoint command to run the Flask server
 EXPOSE 8088
 
-ENTRYPOINT ["python", "gunicorn", "--access-logfile", "-", "--bind", "0.0.0.0:8088", "--threads=5", "--preload", "endpoint.py"]
+ENTRYPOINT ["python", "endpoint.py"]
 
